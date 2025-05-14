@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workout Details</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Workout Details</h1>
+    <p><strong>ID:</strong> {{.ID}}</p>
+    <p><strong>Exercise:</strong> {{.Exercise}}</p>
+    <p><strong>Duration:</strong> {{.Duration}} minutes</p>
+    <p><strong>Location:</strong> {{.Location}}</p>
+    <p><strong>Description:</strong> {{.Description}}</p>
+    <a href="/workout/{{.ID}}/edit">Edit</a> | <a href="/">Back to List</a>
+</body>
+</html>
+
+

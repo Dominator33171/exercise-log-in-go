@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Workout</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>New Workout</h1>
+    <form action="/workout/create" method="POST">
+        <label for="exercise">Exercise:</label><br>
+        <input type="text" id="exercise" name="exercise" required><br>
+        <label for="duration">Duration (minutes):</label><br>
+        <input type="number" id="duration" name="duration" required><br>
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location"><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description"></textarea><br>
+        <button type="submit">Create</button>
+    </form>
+    <a href="/">Back to List</a>
+</body>
+</html>

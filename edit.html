@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Workout</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <h1>Edit Workout</h1>
+    <form action="/workout/{{.ID}}/update" method="POST">
+        <label for="exercise">Exercise:</label><br>
+        <input type="text" id="exercise" name="exercise" value="{{.Exercise}}" required><br>
+        <label for="duration">Duration (minutes):</label><br>
+        <input type="number" id="duration" name="duration" value="{{.Duration}}" required><br>
+        <label for="location">Location:</label><br>
+        <input type="text" id="location" name="location" value="{{.Location}}"><br>
+        <label for="description">Description:</label><br>
+        <textarea id="description" name="description">{{.Description}}</textarea><br>
+        <button type="submit">Update</button>
+    </form>
+    <a href="/workout/{{.ID}}">Cancel</a>
+</body>
+</html>
