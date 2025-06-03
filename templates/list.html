@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head><title>Workout Tracker</title></head>
+<body>
+<h1>Workouts</h1>
+<p>Welcome to the Workout Tracker!</p>
+<form action="/workout/new" method="POST">
+    <label>Exercise: <input type="text" name="exercise"></label><br>
+    <label>Duration (minutes): <input type="number" name="duration"></label><br>
+    <label>Location: <input type="text" name="location"></label><br>
+    <label>Description: <textarea name="description"></textarea></label><br>
+    <input type="submit" value="Add Workout">
+</form>
+</body>
+</html>
